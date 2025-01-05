@@ -2,6 +2,9 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+# encabezado
+st.header('Esta aplicación web crea visualizaciones para el análisis de datos del dataset vehicles_us.csv')
+
 car_data = pd.read_csv('vehicles_us.csv')  # leer los datos
 hist_button = st.button('Construir histograma')  # crear un botón
 
